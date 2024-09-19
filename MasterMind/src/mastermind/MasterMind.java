@@ -142,6 +142,9 @@ public class MasterMind {
 		String codemaker10_3 = " ";
 		String codemaker10_4 = " ";
 		
+		System.out.println("gefeliciteerd je hebt gewonnen!");
+		System.out.println("helaas je hebt verloren.");
+		
 		
 	}
 
