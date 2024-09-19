@@ -1,11 +1,18 @@
 
 package mastermind;
 
+import java.util.Scanner;
+
 public class Chickens01 {
     public static void main(String[] args) {
         //Put yout code here
-    	int eggsPerChicken = 5;
-    	int chickenCount = 3;
+    	
+    	Scanner sc = new Scanner(System.in);
+    	
+    	System.out.println("eggs per chicken?");
+    	int eggsPerChicken = sc.nextInt();
+    	System.out.println("chicken count?");
+    	int chickenCount = sc.nextInt();
     	int totalEggs = eggsPerChicken*chickenCount;
     	
         System.out.println("Total eggs day 1");
@@ -29,8 +36,10 @@ public class Chickens01 {
         System.out.println(eggsTotal);
         
         
-        eggsPerChicken = 5;
-    	chickenCount = 8;
+    	System.out.println("eggs per chicken?");
+        eggsPerChicken = sc.nextInt();
+        System.out.println("chicken count?");
+    	chickenCount = sc.nextInt();
     	totalEggs = eggsPerChicken*chickenCount;
     	
         System.out.println("Total eggs day 1");
@@ -52,5 +61,7 @@ public class Chickens01 {
         
         System.out.println("Total eggs all days");
         System.out.println(eggsTotal);
+        
+        sc.close();
     }   
 }

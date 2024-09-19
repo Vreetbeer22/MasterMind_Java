@@ -22,6 +22,7 @@ public class MasterMind {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		System.out.println("code 1");
 		String codebreaker1_1 = sc.next();
 		String codebreaker1_2 = sc.next();
 		String codebreaker1_3 = sc.next();
@@ -34,6 +35,7 @@ public class MasterMind {
 		String codemaker1_4 = " ";
 		
 		
+		System.out.println("code 2");
 		String codebreaker2_1 = sc.next();
 		String codebreaker2_2 = sc.next();
 		String codebreaker2_3 = sc.next();
@@ -45,6 +47,7 @@ public class MasterMind {
 		String codemaker2_4 = " ";
 		
 		
+		System.out.println("code 3");
 		String codebreaker3_1 = sc.next();
 		String codebreaker3_2 = sc.next();
 		String codebreaker3_3 = sc.next();
@@ -56,6 +59,7 @@ public class MasterMind {
 		String codemaker3_4 = " ";
 		
 		
+		System.out.println("code 4");
 		String codebreaker4_1 = sc.next();
 		String codebreaker4_2 = sc.next();
 		String codebreaker4_3 = sc.next();
@@ -67,6 +71,7 @@ public class MasterMind {
 		String codemaker4_4 = " ";
 		
 		
+		System.out.println("code 5");
 		String codebreaker5_1 = sc.next();
 		String codebreaker5_2 = sc.next();
 		String codebreaker5_3 = sc.next();
@@ -78,6 +83,7 @@ public class MasterMind {
 		String codemaker5_4 = " ";
 		
 		
+		System.out.println("code 6");
 		String codebreaker6_1 = sc.next();
 		String codebreaker6_2 = sc.next();
 		String codebreaker6_3 = sc.next();
@@ -89,6 +95,7 @@ public class MasterMind {
 		String codemaker6_4 = " ";
 		
 		
+		System.out.println("code 7");
 		String codebreaker7_1 = sc.next();
 		String codebreaker7_2 = sc.next();
 		String codebreaker7_3 = sc.next();
@@ -100,6 +107,7 @@ public class MasterMind {
 		String codemaker7_4 = " ";
 		
 		
+		System.out.println("code 8");
 		String codebreaker8_1 = sc.next();
 		String codebreaker8_2 = sc.next();
 		String codebreaker8_3 = sc.next();
@@ -111,6 +119,7 @@ public class MasterMind {
 		String codemaker8_4 = " ";
 		
 		
+		System.out.println("code 9");
 		String codebreaker9_1 = sc.next();
 		String codebreaker9_2 = sc.next();
 		String codebreaker9_3 = sc.next();
@@ -122,6 +131,7 @@ public class MasterMind {
 		String codemaker9_4 = " ";
 		
 		
+		System.out.println("code 10");
 		String codebreaker10_1 = sc.next();
 		String codebreaker10_2 = sc.next();
 		String codebreaker10_3 = sc.next();
