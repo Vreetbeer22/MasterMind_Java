@@ -8,6 +8,8 @@ public class MasterMind {
 
 		String wit = "wi";
 		String zwart = "zw";
+		String punt = " - ";
+		
 		String rood = "ro";
 		String blauw = "bl";
 		String groen = "gr";
@@ -15,12 +17,22 @@ public class MasterMind {
 		String paars = "pa";
 		String oranje = "or";
 		
-		String code1 = "";
-		String code2 = "";
-		String code3 = "";
-		String code4 = "";
+		String code1 = rood;
+		String code2 = blauw;
+		String code3 = rood;
+		String code4 = rood;
 		
 		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Welkom bij mastermind!");
+		System.out.println("Het doel van het spel is om de code te kraken");
+		System.out.println("Hier heb je 10 rondes voor");
+		System.out.println("Er zijn 6 kleuren die je kan raden, de kleuren zijn:");
+		System.out.println("(rood)-ro, (blauw)-bl, (groen)-gr, (geel)-ge, (paars)-pa en (oranje)-or");
+		System.out.println("De code is 4 kleuren lang dus je vult elke ronde 4 kleuren in");
+		System.out.println("Als je een kleur op de goede plek hebt staan krijg je de kleur wit terug");
+		System.out.println("Als de kleur niet goed is krijg je de kleur zwart terug");
+		System.out.println("Veel succes!! \n");
 		
 		System.out.println("code 1");
 		String codebreaker1_1 = sc.next();
@@ -30,9 +42,76 @@ public class MasterMind {
 		
 		
 		String codemaker1_1 = " ";
+		if (codebreaker1_1.equals(code1)) {
+			codemaker1_1 = wit;
+		}
+		else if (codebreaker1_1.equals(code2)) {
+			codemaker1_1 = zwart;
+		}
+		else if (codebreaker1_1.equals(code3)) {
+			codemaker1_1 = zwart;
+		}
+		else if (codebreaker1_1.equals(code4)) {
+			codemaker1_1 = zwart;
+		}
+		else {
+			codemaker1_1 = punt;
+		}
+		System.out.println(codemaker1_1);
+		
 		String codemaker1_2 = " ";
+		if (codebreaker1_2.equals(code2)) {
+			codemaker1_2 = wit;
+		}
+		else if (codebreaker1_2.equals(code1)) {
+			codemaker1_2 = zwart;
+		}
+		else if (codebreaker1_2.equals(code3)) {
+			codemaker1_2 = zwart;
+		}
+		else if (codebreaker1_2.equals(code4)) {
+			codemaker1_2 = zwart;
+		}
+		else {
+			codemaker1_2 = punt;
+		}
+		System.out.println(codemaker1_2);
+		
 		String codemaker1_3 = " ";
+		if (codebreaker1_3.equals(code3)) {
+			codemaker1_3 = wit;
+		}
+		else if (codebreaker1_3.equals(code1)) {
+			codemaker1_3 = zwart;
+		}
+		else if (codebreaker1_3.equals(code2)) {
+			codemaker1_3 = zwart;
+		}
+		else if (codebreaker1_3.equals(code4)) {
+			codemaker1_3 = zwart;
+		}
+		else {
+			codemaker1_3 = punt;
+		}
+		System.out.println(codemaker1_3);
+		
 		String codemaker1_4 = " ";
+		if (codebreaker1_4.equals(code4)) {
+			codemaker1_4 = wit;
+		}
+		else if (codebreaker1_4.equals(code1)) {
+			codemaker1_4 = zwart;
+		}
+		else if (codebreaker1_4.equals(code2)) {
+			codemaker1_4 = zwart;
+		}
+		else if (codebreaker1_4.equals(code3)) {
+			codemaker1_4 = zwart;
+		}
+		else {
+			codemaker1_4 = punt;
+		}
+		System.out.println(codemaker1_4);
 		
 		
 		System.out.println("code 2");
@@ -145,6 +224,7 @@ public class MasterMind {
 		System.out.println("gefeliciteerd je hebt gewonnen!");
 		System.out.println("helaas je hebt verloren.");
 		
+		sc.close();
 		
 	}
 
