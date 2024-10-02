@@ -123,17 +123,59 @@ public class Opdrachten_150 extends Test {
 		
 		// opdracht11
 		
-		System.out.println("\n");
-		System.out.println("opdracht 11");
-		System.out.println("straal van de cirkel?");
-		double straal = sc.nextDouble();
-		System.out.println("omtrek van de cirkel");
-		double omtrek = (straal*2)*Math.PI;
-		System.out.println(omtrek);
-		System.out.println("oppervlakte van de cirkel");
-		double oppervlakte = Math.PI*(straal*straal);
-		System.out.println(oppervlakte);
+		// opdracht12
 		
+//		System.out.println("\n");
+//		System.out.println("opdracht 12");
+//		System.out.println("nummer 1?");
+//		int nummer12_1 = sc.nextInt();
+//		System.out.println("nummer 2?");
+//		int nummer12_2 = sc.nextInt();
+//		System.out.println("nummer 3?");
+//		int nummer12_3 = sc.nextInt();
+//		double nummer12_4 = (nummer12_1 + nummer12_2 + nummer12_3) / 3.0;
+//		System.out.println("gemiddelde:");
+//		System.out.println(nummer12_4);
+		
+		// opdracht13
+		
+//		System.out.println("\n");
+//		System.out.println("opdracht 13");
+//		System.out.println("lengte is?");
+//		double lengte13 = sc.nextDouble();
+//		System.out.println("breedte is?");
+//		double breedte13 = sc.nextDouble();
+//		double oppervlakte13 = lengte13 * breedte13;
+//		System.out.println("oppervlakte is "+lengte13+" x "+breedte13+" = "+oppervlakte13);
+//		double omtrek13 = 2 * (lengte13 + breedte13);
+//		System.out.println("omtrek is 2 x ("+lengte13+" + "+breedte13+") = "+omtrek13);
+		
+		// opdracht14
+		
+//		System.out.println("\n");
+//		System.out.println("opdracht 14");
+//		System.out.println("* * * * * * ==================================");
+//		System.out.println(" * * * * *  ==================================");
+//		System.out.println("* * * * * * ==================================");
+//		System.out.println(" * * * * *  ==================================");
+//		System.out.println("* * * * * * ==================================");
+//		System.out.println(" * * * * *  ==================================");
+//		System.out.println("* * * * * * ==================================");
+//		System.out.println(" * * * * *  ==================================");
+//		System.out.println("* * * * * * ==================================");
+//		System.out.println("==============================================");
+//		System.out.println("==============================================");
+//		System.out.println("==============================================");
+//		System.out.println("==============================================");
+//		System.out.println("==============================================");
+//		System.out.println("==============================================");
+	  	
+		// opdracht14
+		
+		System.out.println("\n");
+		System.out.println("opdracht 14");
+		System.out.println("nummer 1?");
+		System.out.println("nummer 2?");
 		
 		sc.close();
 	}

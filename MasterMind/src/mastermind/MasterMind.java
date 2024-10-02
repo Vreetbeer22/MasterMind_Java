@@ -1,26 +1,31 @@
 package mastermind;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class MasterMind {
 
 	public static void main(String[] args) {
 
-		String wit = "wi";
-		String zwart = "zw";
-		String punt = " - ";
+		final String wit = "wi";
+		final String zwart = "zw";
+		final String punt = " - ";
 		
-		String rood = "ro";
-		String blauw = "bl";
-		String groen = "gr";
-		String geel = "ge";
-		String paars = "pa";
-		String oranje = "or";
+		final String rood = "ro";
+		final String blauw = "bl";
+		final String groen = "gr";
+		final String geel = "ge";
+		final String paars = "pa";
+		final String oranje = "or";
 		
-		String code1 = rood;
-		String code2 = blauw;
-		String code3 = rood;
-		String code4 = rood;
+		String[] random = {rood, blauw, groen, geel, paars, oranje};
+		Random rnd = new Random();
+		
+		String code1 = random[rnd.nextInt(random.length)];
+		String code2 = random[rnd.nextInt(random.length)];
+		String code3 = random[rnd.nextInt(random.length)];
+		String code4 = random[rnd.nextInt(random.length)];
+		int codegetal = 1;
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -31,10 +36,14 @@ public class MasterMind {
 		System.out.println("(rood)-ro, (blauw)-bl, (groen)-gr, (geel)-ge, (paars)-pa en (oranje)-or");
 		System.out.println("De code is 4 kleuren lang dus je vult elke ronde 4 kleuren in");
 		System.out.println("Als je een kleur op de goede plek hebt staan krijg je de kleur wit terug");
-		System.out.println("Als de kleur niet goed is krijg je de kleur zwart terug");
+		System.out.println("Als de kleur niet goed maar wel in de code zit krijg je de kleur zwart terug");
+		System.out.println("als de kleur helemaal niet in de code zit krijg je ' - ' terug");
 		System.out.println("Veel succes!! \n");
 		
-		System.out.println("code 1");
+		
+		for (int i =10; i >= 0; i--) {
+		
+		System.out.println("code "+codegetal);
 		String codebreaker1_1 = sc.next();
 		String codebreaker1_2 = sc.next();
 		String codebreaker1_3 = sc.next();
@@ -44,185 +53,101 @@ public class MasterMind {
 		String codemaker1_1 = " ";
 		if (codebreaker1_1.equals(code1)) {
 			codemaker1_1 = wit;
-		}
+		}//end if
 		else if (codebreaker1_1.equals(code2)) {
 			codemaker1_1 = zwart;
-		}
+		}//end else if
 		else if (codebreaker1_1.equals(code3)) {
 			codemaker1_1 = zwart;
-		}
+		}//end else if
 		else if (codebreaker1_1.equals(code4)) {
 			codemaker1_1 = zwart;
-		}
+		}// end else if
 		else {
 			codemaker1_1 = punt;
-		}
+		}//end else
 		System.out.println(codemaker1_1);
 		
 		String codemaker1_2 = " ";
 		if (codebreaker1_2.equals(code2)) {
 			codemaker1_2 = wit;
-		}
+		}//end if
 		else if (codebreaker1_2.equals(code1)) {
 			codemaker1_2 = zwart;
-		}
+		}//end else if
 		else if (codebreaker1_2.equals(code3)) {
 			codemaker1_2 = zwart;
-		}
+		}//end else if
 		else if (codebreaker1_2.equals(code4)) {
 			codemaker1_2 = zwart;
-		}
+		}//end else if
 		else {
 			codemaker1_2 = punt;
-		}
+		}//end else
 		System.out.println(codemaker1_2);
 		
 		String codemaker1_3 = " ";
 		if (codebreaker1_3.equals(code3)) {
 			codemaker1_3 = wit;
-		}
+		}//end if
 		else if (codebreaker1_3.equals(code1)) {
 			codemaker1_3 = zwart;
-		}
+		}//end else if
 		else if (codebreaker1_3.equals(code2)) {
 			codemaker1_3 = zwart;
-		}
+		}//end else if
 		else if (codebreaker1_3.equals(code4)) {
 			codemaker1_3 = zwart;
-		}
+		}//end else if
 		else {
 			codemaker1_3 = punt;
-		}
+		}// end else
 		System.out.println(codemaker1_3);
 		
 		String codemaker1_4 = " ";
 		if (codebreaker1_4.equals(code4)) {
 			codemaker1_4 = wit;
-		}
+		}//end if
 		else if (codebreaker1_4.equals(code1)) {
 			codemaker1_4 = zwart;
-		}
+		}//end else if
 		else if (codebreaker1_4.equals(code2)) {
 			codemaker1_4 = zwart;
-		}
+		}//end else if
 		else if (codebreaker1_4.equals(code3)) {
 			codemaker1_4 = zwart;
-		}
+		}//end else if
 		else {
 			codemaker1_4 = punt;
-		}
+		}//end else
 		System.out.println(codemaker1_4);
 		
+		codegetal = ++codegetal;
 		
-		System.out.println("code 2");
-		String codebreaker2_1 = sc.next();
-		String codebreaker2_2 = sc.next();
-		String codebreaker2_3 = sc.next();
-		String codebreaker2_4 = sc.next();
-		
-		String codemaker2_1 = " ";
-		String codemaker2_2 = " ";
-		String codemaker2_3 = " ";
-		String codemaker2_4 = " ";
-		
-		
-		System.out.println("code 3");
-		String codebreaker3_1 = sc.next();
-		String codebreaker3_2 = sc.next();
-		String codebreaker3_3 = sc.next();
-		String codebreaker3_4 = sc.next();
-		
-		String codemaker3_1 = " ";
-		String codemaker3_2 = " ";
-		String codemaker3_3 = " ";
-		String codemaker3_4 = " ";
-		
-		
-		System.out.println("code 4");
-		String codebreaker4_1 = sc.next();
-		String codebreaker4_2 = sc.next();
-		String codebreaker4_3 = sc.next();
-		String codebreaker4_4 = sc.next();
-		
-		String codemaker4_1 = " ";
-		String codemaker4_2 = " ";
-		String codemaker4_3 = " ";
-		String codemaker4_4 = " ";
-		
-		
-		System.out.println("code 5");
-		String codebreaker5_1 = sc.next();
-		String codebreaker5_2 = sc.next();
-		String codebreaker5_3 = sc.next();
-		String codebreaker5_4 = sc.next();
-		
-		String codemaker5_1 = " ";
-		String codemaker5_2 = " ";
-		String codemaker5_3 = " ";
-		String codemaker5_4 = " ";
-		
-		
-		System.out.println("code 6");
-		String codebreaker6_1 = sc.next();
-		String codebreaker6_2 = sc.next();
-		String codebreaker6_3 = sc.next();
-		String codebreaker6_4 = sc.next();
-		
-		String codemaker6_1 = " ";
-		String codemaker6_2 = " ";
-		String codemaker6_3 = " ";
-		String codemaker6_4 = " ";
-		
-		
-		System.out.println("code 7");
-		String codebreaker7_1 = sc.next();
-		String codebreaker7_2 = sc.next();
-		String codebreaker7_3 = sc.next();
-		String codebreaker7_4 = sc.next();
-		
-		String codemaker7_1 = " ";
-		String codemaker7_2 = " ";
-		String codemaker7_3 = " ";
-		String codemaker7_4 = " ";
-		
-		
-		System.out.println("code 8");
-		String codebreaker8_1 = sc.next();
-		String codebreaker8_2 = sc.next();
-		String codebreaker8_3 = sc.next();
-		String codebreaker8_4 = sc.next();
-		
-		String codemaker8_1 = " ";
-		String codemaker8_2 = " ";
-		String codemaker8_3 = " ";
-		String codemaker8_4 = " ";
-		
-		
-		System.out.println("code 9");
-		String codebreaker9_1 = sc.next();
-		String codebreaker9_2 = sc.next();
-		String codebreaker9_3 = sc.next();
-		String codebreaker9_4 = sc.next();
-		
-		String codemaker9_1 = " ";
-		String codemaker9_2 = " ";
-		String codemaker9_3 = " ";
-		String codemaker9_4 = " ";
-		
-		
-		System.out.println("code 10");
-		String codebreaker10_1 = sc.next();
-		String codebreaker10_2 = sc.next();
-		String codebreaker10_3 = sc.next();
-		String codebreaker10_4 = sc.next();
-		
-		String codemaker10_1 = " ";
-		String codemaker10_2 = " ";
-		String codemaker10_3 = " ";
-		String codemaker10_4 = " ";
-		
-		System.out.println("gefeliciteerd je hebt gewonnen!");
-		System.out.println("helaas je hebt verloren.");
+		if (codebreaker1_1.equals(code1)) {
+			
+			if (codebreaker1_2.equals(code2)) {
+				
+				if (codebreaker1_3.equals(code3)) {
+					
+					if (codebreaker1_4.equals(code4)) {
+						
+						System.out.println("gefeliciteerd je hebt gewonnen!");
+						break;
+					}
+					
+				}
+				
+			}
+			
+		}
+		if (i == 1) {
+			
+			System.out.println("helaas je hebt verloren.");
+			break;
+		}
+}
+
 		
 		sc.close();
 		
