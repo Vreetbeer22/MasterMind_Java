@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class MasterMind {
 
 	public static void main(String[] args) {
-
+		
 		final String wit = "wi";
 		final String zwart = "zw";
 		final String punt = " - ";
@@ -40,8 +40,8 @@ public class MasterMind {
 		System.out.println("als de kleur helemaal niet in de code zit krijg je ' - ' terug");
 		System.out.println("Veel succes!! \n");
 		
-		
-		for (int i =10; i >= 0; i--) {
+
+		for (int i =10; i > 0; i--) {
 		
 		System.out.println("code "+codegetal);
 		String codebreaker1_1 = sc.next();
